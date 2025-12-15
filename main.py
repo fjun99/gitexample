@@ -3,7 +3,14 @@ from cowsay_demo import cowsay
 
 def main():
     print("Hello from gitsample-project!")
-    message = sys.argv[1] if len(sys.argv) > 1 else "Hello from main!"
+    # Accept user input interactively
+    try:
+        message = input("Please enter the message for the cow: ")
+        if not message:
+            message = "Hello from main!"
+    except EOFError:
+        message = "Hello from main!"
+    
     cowsay(message)
 
 
