@@ -1,0 +1,7 @@
+[project]
+name = "gitsample-project"
+version = "0.1.0"
+description = "A sample Python project for testing Git SOP workflow"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
